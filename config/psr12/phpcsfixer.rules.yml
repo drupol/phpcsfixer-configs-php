@@ -1,0 +1,36 @@
+parameters:
+    rules:
+        '@PSR2': true
+        single_import_per_statement: false
+        lowercase_cast: true
+        short_scalar_cast: true
+        blank_line_after_opening_tag: true
+        no_leading_import_slash: true
+        ordered_imports:
+            importsOrder:
+                - class
+                - function
+                - const
+        declare_equal_normalize:
+            space: none
+        new_with_braces: true
+        braces:
+            - allow_single_line_closure: false
+            - position_after_functions_and_oop_constructs: next
+            - position_after_control_structures: same
+            - position_after_anonymous_constructs: same
+        no_blank_lines_after_class_opening: true
+        no_extra_blank_lines: false
+        ordered_class_elements:
+            - order:
+                  - use_trait
+        visibility_required:
+            - elements:
+                  - const
+                  - method
+                  - property
+        binary_operator_spaces: true
+        ternary_operator_spaces: true
+        unary_operator_spaces: true
+        return_type_declaration: true
+        no_trailing_whitespace: true
