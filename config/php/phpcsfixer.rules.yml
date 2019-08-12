@@ -53,7 +53,7 @@ parameters:
             spacing: one
         date_time_immutable: true
         declare_equal_normalize:
-            space: single
+            space: none
         declare_strict_types: false
         dir_constant: true
         doctrine_annotation_array_assignment:
