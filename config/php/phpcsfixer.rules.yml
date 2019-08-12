@@ -1,6 +1,5 @@
 parameters:
     rules:
-        '@PSR2': true
         '@PhpCsFixer': true
         align_multiline_comment:
             comment_type: all_multiline
@@ -8,9 +7,6 @@ parameters:
         array_syntax:
             syntax: long
         backtick_to_shell_exec: true
-        binary_operator_spaces:
-            default: single_space
-        blank_line_after_opening_tag: true
         blank_line_before_return: false
         blank_line_before_statement:
             statements:
@@ -52,8 +48,6 @@ parameters:
         concat_space:
             spacing: one
         date_time_immutable: true
-        declare_equal_normalize:
-            space: none
         declare_strict_types: false
         dir_constant: true
         doctrine_annotation_array_assignment:
@@ -98,7 +92,6 @@ parameters:
         linebreak_after_opening_tag: true
         list_syntax: false
         logical_operators: true
-        lowercase_cast: true
         lowercase_static_reference: true
         magic_constant_casing: true
         magic_method_casing: true
@@ -118,18 +111,16 @@ parameters:
             include:
                 - '@all'
         native_function_type_declaration_casing: true
-        new_with_braces: true
-
         no_alias_functions: true
         no_alternative_syntax: true
         no_binary_string: true
-        no_blank_lines_after_class_opening: true
         no_blank_lines_after_phpdoc: true
         no_blank_lines_before_namespace: false
         no_closing_tag: true
         no_empty_comment: true
         no_empty_phpdoc: true
         no_empty_statement: true
+        # Differs from PSR12 but includes it.
         no_extra_blank_lines:
             tokens:
                 - break
@@ -147,7 +138,6 @@ parameters:
                 - use_trait
         no_extra_consecutive_blank_lines: false
         no_homoglyph_names: true
-        no_leading_import_slash: true
         no_leading_namespace_whitespace: true
         no_mixed_echo_print:
             use: echo
@@ -163,7 +153,6 @@ parameters:
         no_superfluous_phpdoc_tags: false
         no_trailing_comma_in_list_call: true
         no_trailing_comma_in_singleline_array: true
-        no_trailing_whitespace: true
         no_trailing_whitespace_in_comment: true
         no_unneeded_control_parentheses: true
         no_unneeded_curly_braces: true
@@ -181,6 +170,7 @@ parameters:
         not_operator_with_space: false
         not_operator_with_successor_space: false
         object_operator_without_whitespace: true
+        # Differs from PSR12 but includes it.
         ordered_class_elements:
             order:
                 - use_trait
@@ -198,6 +188,7 @@ parameters:
                 - method_protected
                 - method_private
             sortAlgorithm: alpha
+        # Differs from PSR12 but includes it.
         ordered_imports: true
         ordered_interfaces: true
         php_unit_construct: true
@@ -261,12 +252,9 @@ parameters:
         psr4: true
         random_api_migration: true
         return_assignment: true
-        return_type_declaration:
-            space_before: none
         self_accessor: false
         semicolon_after_instruction: true
         set_type_to_cast: true
-        short_scalar_cast: true
         silenced_deprecation_error: false
         single_blank_line_at_eof: true
         single_line_after_imports: true
@@ -283,15 +271,9 @@ parameters:
         strict_comparison: true
         strict_param: true
         string_line_ending: true
-        ternary_operator_spaces: true
         ternary_to_null_coalescing: false
         trailing_comma_in_multiline_array: true
         trim_array_spaces: true
-        unary_operator_spaces: true
-        visibility_required:
-            elements:
-                - method
-                - property
         void_return: false
         whitespace_after_comma_in_array: true
         yoda_style:

@@ -14,7 +14,7 @@ final class Php extends YamlConfig
     {
         parent::__construct('drupol/phpcsfixer-configs-php/php');
 
-        $parent = (new YamlConfig())
+        $parent = (new Psr12())
             ->withRulesFromYaml(
                 __DIR__ . '/../../config/php/phpcsfixer.rules.yml'
             );
