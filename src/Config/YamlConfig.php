@@ -4,6 +4,7 @@ namespace drupol\PhpCsFixerConfigsPhp\Config;
 
 use drupol\PhpCsFixerConfigsPhp\Contract\PhpCsFixerConfigInterface;
 use PhpCsFixer\Config;
+use PhpCsFixer\ConfigInterface;
 use Symfony\Component\Yaml\Yaml;
 
 /**
@@ -32,16 +33,19 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
      */
     public function withRulesFromConfig(...$configs)
     {
-        $rules = $this->getRules();
+        $rules = \array_reduce(
+            $configs,
+            static function (array $carry, ConfigInterface $config) {
+                return \array_merge($carry, $config->getRules());
+            },
+            $this->getRules()
+        );
 
-        foreach ($configs as $config) {
-            $rules = array_merge($rules, $config->getRules());
-        }
+        \ksort($rules);
 
         $clone = clone $this;
 
-        $clone
-            ->setRules($rules);
+        $clone->setRules($rules);
 
         return $clone;
     }
@@ -53,15 +57,16 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
      */
     public function withRulesFromYaml(...$filenames)
     {
-        $rules = array_merge(
+        $rules = \array_merge(
             $this->getRules(),
             $this->getRulesFromFiles(...$filenames)
         );
 
+        \ksort($rules);
+
         $clone = clone $this;
 
-        $clone
-            ->setRules($rules);
+        $clone->setRules($rules);
 
         return $clone;
     }
@@ -73,12 +78,13 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
      */
     public function withRulesFromYamlOnly(...$filenames)
     {
+        $rules = $this->getRulesFromFiles(...$filenames);
+
+        \ksort($rules);
+
         $clone = clone $this;
 
-        $clone
-            ->setRules(
-                $this->getRulesFromFiles(...$filenames)
-            );
+        $clone->setRules($rules);
 
         return $clone;
     }
@@ -93,7 +99,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
         $rules = [];
 
         foreach ($filenames as $filename) {
-            $filename = realpath($filename);
+            $filename = \realpath($filename);
 
             if (false === $filename) {
                 continue;
@@ -102,7 +108,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
             $parsed = (array) Yaml::parseFile($filename);
             $parsed['parameters'] = (array) $parsed['parameters'] + ['rules' => []];
 
-            $rules = array_merge($rules, $parsed['parameters']['rules']);
+            $rules = \array_merge($rules, $parsed['parameters']['rules']);
         }
 
         return $rules;
