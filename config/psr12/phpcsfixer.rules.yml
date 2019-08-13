@@ -3,10 +3,10 @@ parameters:
         '@PSR2': true
         binary_operator_spaces: true
         braces:
-            - allow_single_line_closure: false
-            - position_after_functions_and_oop_constructs: next
-            - position_after_control_structures: same
-            - position_after_anonymous_constructs: same
+            allow_single_line_closure: false
+            position_after_functions_and_oop_constructs: next
+            position_after_control_structures: same
+            position_after_anonymous_constructs: same
         blank_line_after_opening_tag: true
         declare_equal_normalize:
             space: none
@@ -17,10 +17,10 @@ parameters:
         no_leading_import_slash: true
         no_trailing_whitespace: true
         ordered_class_elements:
-            - order:
-                  - use_trait
+            order:
+                - use_trait
         ordered_imports:
-            importsOrder:
+            imports_order:
                 - class
                 - function
                 - const
@@ -31,7 +31,7 @@ parameters:
         ternary_operator_spaces: true
         unary_operator_spaces: true
         visibility_required:
-            - elements:
-                  - const
-                  - method
-                  - property
+            elements:
+                - const
+                - method
+                - property
