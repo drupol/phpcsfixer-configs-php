@@ -2,7 +2,6 @@ parameters:
     rules:
         list_syntax:
             syntax: short
-        void_return: true
         visibility_required:
             elements:
                 - method
