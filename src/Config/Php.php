@@ -32,7 +32,7 @@ final class Php extends YamlConfig
                     ->ignoreDotFiles(true)
                     ->ignoreVCS(true)
                     ->exclude(['build', 'libraries', 'node_modules', 'vendor'])
-                    ->in($_SERVER['PWD'])
+                    ->in(\getcwd())
             );
     }
 }

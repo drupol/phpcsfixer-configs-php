@@ -23,7 +23,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
             ->ignoreDotFiles(true)
             ->ignoreVCS(true)
             ->exclude(['build', 'libraries', 'node_modules', 'vendor'])
-            ->in($_SERVER['PWD']);
+            ->in(\getcwd());
     }
 
     /**
