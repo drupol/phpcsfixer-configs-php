@@ -14,19 +14,19 @@ interface PhpCsFixerConfigInterface extends ConfigInterface
      *
      * @return \drupol\PhpCsFixerConfigsPhp\Contract\PhpCsFixerConfigInterface
      */
-    public function withRulesFromConfig(...$configs): PhpCsFixerConfigInterface;
+    public function withRulesFromConfig(...$configs);
 
     /**
      * @param mixed ...$filenames
      *
      * @return \drupol\PhpCsFixerConfigsPhp\Contract\PhpCsFixerConfigInterface
      */
-    public function withRulesFromYaml(...$filenames): PhpCsFixerConfigInterface;
+    public function withRulesFromYaml(...$filenames);
 
     /**
      * @param mixed ...$filenames
      *
      * @return \drupol\PhpCsFixerConfigsPhp\Contract\PhpCsFixerConfigInterface
      */
-    public function withRulesFromYamlOnly(...$filenames): PhpCsFixerConfigInterface;
+    public function withRulesFromYamlOnly(...$filenames);
 }
