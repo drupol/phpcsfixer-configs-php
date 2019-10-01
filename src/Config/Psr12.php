@@ -14,17 +14,26 @@ final class Psr12 extends YamlConfig
     {
         parent::__construct('drupol/phpcsfixer-configs-php/psr12');
 
-        $parent = (new YamlConfig())
-            ->withRulesFromYaml(
-                __DIR__ . '/../../config/psr12/phpcsfixer.rules.yml'
-            );
+        $parent = $this
+            ->withRulesFromYaml(\dirname(__DIR__, 2) . '/config/psr12/phpcsfixer.rules.yml');
 
         $this
             ->setRules(
                 $parent->getRules()
             );
+    }
 
-        $this
-            ->setFinder($parent->getFinder());
+    /**
+     * {@inheritdoc}
+     */
+    public function getFinder()
+    {
+        return parent::getFinder()
+            ->in(\getcwd())
+            ->files()
+            ->name('*.php')
+            ->ignoreDotFiles(true)
+            ->ignoreVCS(true)
+            ->exclude(['build', 'libraries', 'node_modules', 'vendor']);
     }
 }

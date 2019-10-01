@@ -15,23 +15,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
     /**
      * {@inheritdoc}
      */
-    public function getFinder()
-    {
-        return parent::getFinder()
-            ->files()
-            ->name('*.php')
-            ->ignoreDotFiles(true)
-            ->ignoreVCS(true)
-            ->exclude(['build', 'libraries', 'node_modules', 'vendor'])
-            ->in(\getcwd());
-    }
-
-    /**
-     * @param \PhpCsFixer\ConfigInterface ...$configs
-     *
-     * @return PhpCsFixerConfigInterface
-     */
-    public function withRulesFromConfig(...$configs)
+    public function withRulesFromConfig(...$configs): PhpCsFixerConfigInterface
     {
         $rules = \array_reduce(
             $configs,
@@ -51,11 +35,9 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
     }
 
     /**
-     * @param mixed ...$filenames
-     *
-     * @return PhpCsFixerConfigInterface
+     * {@inheritdoc}
      */
-    public function withRulesFromYaml(...$filenames)
+    public function withRulesFromYaml(...$filenames): PhpCsFixerConfigInterface
     {
         $rules = \array_merge(
             $this->getRules(),
@@ -72,11 +54,9 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
     }
 
     /**
-     * @param mixed ...$filenames
-     *
-     * @return PhpCsFixerConfigInterface
+     * {@inheritdoc}
      */
-    public function withRulesFromYamlOnly(...$filenames)
+    public function withRulesFromYamlOnly(...$filenames): PhpCsFixerConfigInterface
     {
         $rules = $this->getRulesFromFiles(...$filenames);
 
@@ -94,7 +74,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
      *
      * @return array
      */
-    protected function getRulesFromFiles(...$filenames)
+    protected function getRulesFromFiles(...$filenames): array
     {
         $rules = [];
 

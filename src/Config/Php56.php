@@ -14,17 +14,12 @@ final class Php56 extends YamlConfig
     {
         parent::__construct('drupol/phpcsfixer-configs-php/php56');
 
-        $parent = (new YamlConfig())
-            ->withRulesFromConfig(
-                new Php()
-            )
-            ->withRulesFromYaml(
-                __DIR__ . '/../../config/php56/phpcsfixer.rules.yml'
-            );
+        $parent = (new Php())
+            ->withRulesFromYaml(\dirname(__DIR__, 2) . '/config/php56/phpcsfixer.rules.yml');
 
         $this
             ->setRules(
-                $parent->getRules()
+                $this->withRulesFromConfig($parent)->getRules()
             );
 
         $this

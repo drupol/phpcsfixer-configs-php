@@ -14,14 +14,11 @@ final class Php72 extends YamlConfig
     {
         parent::__construct('drupol/phpcsfixer-configs-php/php72');
 
-        $parent = (new YamlConfig())
-            ->withRulesFromConfig(
-                new Php71()
-            );
+        $parent = (new Php71());
 
         $this
             ->setRules(
-                $parent->getRules()
+                $this->withRulesFromConfig($parent)->getRules()
             );
 
         $this

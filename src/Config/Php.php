@@ -15,24 +15,14 @@ final class Php extends YamlConfig
         parent::__construct('drupol/phpcsfixer-configs-php/php');
 
         $parent = (new Psr12())
-            ->withRulesFromYaml(
-                __DIR__ . '/../../config/php/phpcsfixer.rules.yml'
-            );
+            ->withRulesFromYaml(\dirname(__DIR__, 2) . '/config/php/phpcsfixer.rules.yml');
 
         $this
             ->setRules(
-                $parent->getRules()
+                $this->withRulesFromConfig($parent)->getRules()
             );
 
         $this
-            ->setFinder(
-                $this->getFinder()
-                    ->files()
-                    ->name('*.php')
-                    ->ignoreDotFiles(true)
-                    ->ignoreVCS(true)
-                    ->exclude(['build', 'libraries', 'node_modules', 'vendor'])
-                    ->in(\getcwd())
-            );
+            ->setFinder($parent->getFinder());
     }
 }
