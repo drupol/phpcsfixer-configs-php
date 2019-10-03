@@ -15,7 +15,7 @@ final class Php73 extends YamlConfig
         parent::__construct('drupol/phpcsfixer-configs-php/php73');
 
         $parent = (new Php72())
-            ->withRulesFromYaml(\dirname(__DIR__, 2) . '/config/php73/phpcsfixer.rules.yml');
+            ->withRulesFromYaml(\dirname(\dirname(__DIR__)) . '/config/php73/phpcsfixer.rules.yml');
 
         $this
             ->setRules(

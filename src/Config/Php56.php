@@ -15,7 +15,7 @@ final class Php56 extends YamlConfig
         parent::__construct('drupol/phpcsfixer-configs-php/php56');
 
         $parent = (new Php())
-            ->withRulesFromYaml(\dirname(__DIR__, 2) . '/config/php56/phpcsfixer.rules.yml');
+            ->withRulesFromYaml(\dirname(\dirname(__DIR__)) . '/config/php56/phpcsfixer.rules.yml');
 
         $this
             ->setRules(
