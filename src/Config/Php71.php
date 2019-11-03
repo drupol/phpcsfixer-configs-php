@@ -15,7 +15,7 @@ final class Php71 extends YamlConfig
         parent::__construct('drupol/phpcsfixer-configs-php/php71');
 
         $parent = (new Php7())
-            ->withRulesFromYaml(\dirname(__DIR__, 2) . '/config/php71/phpcsfixer.rules.yml');
+            ->withRulesFromYaml(\dirname(\dirname(__DIR__)) . '/config/php71/phpcsfixer.rules.yml');
 
         $this
             ->setRules(
