@@ -144,7 +144,6 @@ parameters:
                 - square_brace_block
                 - switch
                 - throw
-                - use
                 - use_trait
         no_extra_consecutive_blank_lines: false
         no_homoglyph_names: true
@@ -202,7 +201,12 @@ parameters:
                 - method_private
             sortAlgorithm: alpha
         # Differs from PSR12 but includes it.
-        ordered_imports: true
+        ordered_imports:
+            imports_order:
+                - class
+                - const
+                - function
+            sort_algorithm: alpha
         ordered_interfaces: true
         php_unit_construct: true
         php_unit_dedicate_assert: true
