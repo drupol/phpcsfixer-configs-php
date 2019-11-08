@@ -282,7 +282,7 @@ parameters:
         silenced_deprecation_error: false
         single_blank_line_at_eof: true
         single_line_after_imports: true
-        single_line_throw: true
+        single_line_throw: false
         simple_to_complex_string_variable: true
         simplified_null_return: true
         single_blank_line_before_namespace: true
