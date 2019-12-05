@@ -2,6 +2,8 @@
 
 namespace drupol\PhpCsFixerConfigsPhp\Config;
 
+use function dirname;
+
 /**
  * Class Psr12.
  */
@@ -15,7 +17,7 @@ final class Psr12 extends YamlConfig
         parent::__construct('drupol/phpcsfixer-configs-php/psr12');
 
         $parent = $this
-            ->withRulesFromYaml(\dirname(\dirname(__DIR__)) . '/config/psr12/phpcsfixer.rules.yml');
+            ->withRulesFromYaml(dirname(dirname(__DIR__)) . '/config/psr12/phpcsfixer.rules.yml');
 
         $this
             ->setRules(
@@ -29,7 +31,7 @@ final class Psr12 extends YamlConfig
     public function getFinder()
     {
         return parent::getFinder()
-            ->in(\getcwd())
+            ->in(getcwd())
             ->files()
             ->name('*.php')
             ->ignoreDotFiles(true)

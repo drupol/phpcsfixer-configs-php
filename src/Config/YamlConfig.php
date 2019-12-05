@@ -17,15 +17,15 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
      */
     public function withRulesFromConfig(...$configs): PhpCsFixerConfigInterface
     {
-        $rules = \array_reduce(
+        $rules = array_reduce(
             $configs,
             static function (array $carry, ConfigInterface $config) {
-                return \array_merge($carry, $config->getRules());
+                return array_merge($carry, $config->getRules());
             },
             $this->getRules()
         );
 
-        \ksort($rules);
+        ksort($rules);
 
         $clone = clone $this;
 
@@ -39,12 +39,12 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
      */
     public function withRulesFromYaml(...$filenames): PhpCsFixerConfigInterface
     {
-        $rules = \array_merge(
+        $rules = array_merge(
             $this->getRules(),
             $this->getRulesFromFiles(...$filenames)
         );
 
-        \ksort($rules);
+        ksort($rules);
 
         $clone = clone $this;
 
@@ -60,7 +60,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
     {
         $rules = $this->getRulesFromFiles(...$filenames);
 
-        \ksort($rules);
+        ksort($rules);
 
         $clone = clone $this;
 
@@ -79,7 +79,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
         $rules = [];
 
         foreach ($filenames as $filename) {
-            $filename = \realpath($filename);
+            $filename = realpath($filename);
 
             if (false === $filename) {
                 continue;
@@ -88,7 +88,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
             $parsed = (array) Yaml::parseFile($filename);
             $parsed['parameters'] = (array) $parsed['parameters'] + ['rules' => []];
 
-            $rules = \array_merge($rules, $parsed['parameters']['rules']);
+            $rules = array_merge($rules, $parsed['parameters']['rules']);
         }
 
         return $rules;
