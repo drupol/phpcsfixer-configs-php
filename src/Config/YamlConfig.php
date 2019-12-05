@@ -15,7 +15,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
     /**
      * {@inheritdoc}
      */
-    public function withRulesFromConfig(...$configs): PhpCsFixerConfigInterface
+    public function withRulesFromConfig(...$configs)
     {
         $rules = \array_reduce(
             $configs,
@@ -37,7 +37,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
     /**
      * {@inheritdoc}
      */
-    public function withRulesFromYaml(...$filenames): PhpCsFixerConfigInterface
+    public function withRulesFromYaml(...$filenames)
     {
         $rules = \array_merge(
             $this->getRules(),
@@ -56,7 +56,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
     /**
      * {@inheritdoc}
      */
-    public function withRulesFromYamlOnly(...$filenames): PhpCsFixerConfigInterface
+    public function withRulesFromYamlOnly(...$filenames)
     {
         $rules = $this->getRulesFromFiles(...$filenames);
 
@@ -74,7 +74,7 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
      *
      * @return array
      */
-    protected function getRulesFromFiles(...$filenames): array
+    protected function getRulesFromFiles(...$filenames)
     {
         $rules = [];
 
