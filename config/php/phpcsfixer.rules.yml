@@ -284,7 +284,7 @@ parameters:
         single_line_after_imports: true
         single_line_throw: false
         simple_to_complex_string_variable: true
-        simplified_null_return: true
+        simplified_null_return: false
         single_blank_line_before_namespace: true
         single_line_comment_style: false
         single_quote: true
