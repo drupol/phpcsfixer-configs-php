@@ -28,16 +28,14 @@
         "sort-packages": true
     },
     "require-dev": {
-        "drupol/phpspec-annotation": "^1",
-        "friends-of-phpspec/phpspec-code-coverage": "^4.1.2",
+        "friends-of-phpspec/phpspec-code-coverage": "^4.3.2",
         "infection/infection": "^0.13.6 || ^0.14.4 || ^0.15.0",
         "phpro/grumphp": "^0.16.2 || ^0.17.0",
-        "phpspec/phpspec": "^5.1.2 || ^6.1",
-        "phptaskman/changelog": "^1.0"
+        "phpspec/phpspec": "^5.1.2 || ^6.1.1",
+        "phptaskman/changelog": "^1.0",
+        "scrutinizer/ocular": "^1.6"
     },
     "scripts": {
-        "apigen": "./vendor/bin/apigen generate src --destination build/docs",
-        "bench": "./vendor/bin/phpbench run --report=aggregate --store --precision=3",
         "grumphp": "./vendor/bin/grumphp run",
         "infection": "./vendor/bin/infection run -j 10",
         "scrutinizer": "./vendor/bin/ocular code-coverage:upload --format=php-clover build/logs/clover.xml"
