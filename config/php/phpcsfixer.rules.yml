@@ -50,7 +50,7 @@ parameters:
             spacing: one
         constant_case:
             case: lower
-        date_time_immutable: true
+        date_time_immutable: false
         declare_strict_types: false
         dir_constant: true
         doctrine_annotation_array_assignment:
