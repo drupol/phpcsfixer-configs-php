@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace spec\drupol\PhpCsFixerConfigsPhp\Config;
 
 use drupol\PhpCsFixerConfigsPhp\Config\Php71;

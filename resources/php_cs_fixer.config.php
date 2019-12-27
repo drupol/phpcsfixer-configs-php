@@ -1,5 +1,7 @@
 <?php
 
-use drupol\PhpCsFixerConfigsPhp\Config\Php56;
+declare(strict_types=1);
 
-return Php56::create();
+use drupol\PhpCsFixerConfigsPhp\Config\Php71;
+
+return Php71::create();
