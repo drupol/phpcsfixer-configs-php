@@ -19,6 +19,7 @@ This package provides a set [PHP-Cs-Fixer](https://github.com/FriendsOfPHP/PHP-C
 
 Available configuration objects:
 
+* `drupol\PhpCsFixerConfigsPhp\Config\PSR12`
 * `drupol\PhpCsFixerConfigsPhp\Config\Php56`
 * `drupol\PhpCsFixerConfigsPhp\Config\Php7`
 * `drupol\PhpCsFixerConfigsPhp\Config\Php71`
@@ -36,8 +37,6 @@ It implements the method(s):
 ```
 
 Where the `$configs` parameters must implements `PhpCsFixer/ConfigInterface`.
-
-
 
 ## Requirements
 

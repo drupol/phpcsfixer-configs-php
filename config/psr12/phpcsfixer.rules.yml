@@ -22,8 +22,8 @@ parameters:
         ordered_imports:
             imports_order:
                 - class
-                - function
                 - const
+                - function
         return_type_declaration:
             space_before: none
         short_scalar_cast: true

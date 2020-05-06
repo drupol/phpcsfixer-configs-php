@@ -2,6 +2,9 @@ parameters:
     git_dir: .
     bin_dir: vendor/bin
     tasks:
+        phplint: ~
+        yamllint: ~
+        jsonlint: ~
         phpcsfixer2:
             config: ./resources/php_cs_fixer.config.php
             triggered_by: ['php']
