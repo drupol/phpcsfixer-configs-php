@@ -200,12 +200,11 @@ parameters:
                 - method_protected
                 - method_private
             sortAlgorithm: alpha
-        # Differs from PSR12 but includes it.
         ordered_imports:
             imports_order:
                 - class
-                - function
                 - const
+                - function
             sort_algorithm: alpha
         ordered_interfaces: true
         php_unit_construct: true
