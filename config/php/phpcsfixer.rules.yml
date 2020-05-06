@@ -203,8 +203,8 @@ parameters:
         ordered_imports:
             imports_order:
                 - class
-                - const
                 - function
+                - const
             sort_algorithm: alpha
         ordered_interfaces: true
         php_unit_construct: true
