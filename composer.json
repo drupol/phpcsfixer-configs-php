@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">= 7.1.3",
-        "friendsofphp/php-cs-fixer": "^2.16.3",
+        "friendsofphp/php-cs-fixer": "^2.16.4",
         "symfony/yaml": "^3 || ^4 || ^5"
     },
     "autoload": {
@@ -29,13 +29,13 @@
     },
     "require-dev": {
         "friends-of-phpspec/phpspec-code-coverage": "^4.3.2",
-        "infection/infection": "^0.13.6 || ^0.14.4 || ^0.15.0",
+        "infection/infection": "^0.13.6 || ^0.14.4 || ^0.15.3",
         "php-parallel-lint/php-parallel-lint": "^1.2",
-        "phpro/grumphp": "^0.16.2 || ^0.17.0",
-        "phpspec/phpspec": "^5.1.2 || ^6.1.1"
+        "phpro/grumphp": "^0.16.2 || ^0.17.1",
+        "phpspec/phpspec": "^5.1.2 || ^6.2.1"
     },
     "scripts": {
         "grumphp": "./vendor/bin/grumphp run",
-        "infection": "./vendor/bin/infection run -j 10"
+        "infection": "./vendor/bin/infection run -j 4"
     }
 }
