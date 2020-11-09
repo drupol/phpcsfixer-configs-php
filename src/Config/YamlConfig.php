@@ -73,8 +73,6 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
 
     /**
      * @param mixed ...$filenames
-     *
-     * @return array
      */
     protected function getRulesFromFiles(...$filenames): array
     {

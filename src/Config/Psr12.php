@@ -38,6 +38,13 @@ final class Psr12 extends YamlConfig
             ->name('*.php')
             ->ignoreDotFiles(true)
             ->ignoreVCS(true)
-            ->exclude(['build', 'libraries', 'node_modules', 'vendor']);
+            ->exclude([
+                'build',
+                'benchmarks',
+                'libraries',
+                'node_modules',
+                'var',
+                'vendor',
+            ]);
     }
 }
