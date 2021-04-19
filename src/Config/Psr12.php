@@ -35,10 +35,13 @@ final class Psr12 extends YamlConfig
         return parent::getFinder()
             ->in(getcwd())
             ->files()
-            ->name('*.php')
+            ->name(['*.php', '.php_cs', '.php_cs.dist'])
             ->ignoreDotFiles(true)
             ->ignoreVCS(true)
             ->exclude([
+                '.github',
+                '.idea',
+                'resource',
                 'build',
                 'benchmarks',
                 'libraries',
