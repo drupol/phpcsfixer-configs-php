@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">= 7.1.3",
-        "friendsofphp/php-cs-fixer": "^2.17.3",
+        "friendsofphp/php-cs-fixer": "^3",
         "symfony/yaml": "^3 || ^4 || ^5"
     },
     "autoload": {
@@ -28,14 +28,24 @@
         "sort-packages": true
     },
     "require-dev": {
-        "friends-of-phpspec/phpspec-code-coverage": "^4.3.2",
-        "infection/infection": "^0.13.6 || ^0.14.4 || ^0.15.3",
-        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "friends-of-phpspec/phpspec-code-coverage": "^6",
+        "php-parallel-lint/php-parallel-lint": "^1.3",
         "phpro/grumphp": "1.1.*",
-        "phpspec/phpspec": "^5.1.2 || ^6.2.1"
+        "phpspec/phpspec": "^7"
     },
     "scripts": {
         "grumphp": "./vendor/bin/grumphp run",
-        "infection": "./vendor/bin/infection run -j 4"
-    }
+        "changelog-unreleased": "docker-compose run auto_changelog -c .auto-changelog -u",
+        "changelog-version": "docker-compose run auto_changelog -c .auto-changelog -v"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/drupol"
+        },
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.me/drupol"
+        }
+    ]
 }
