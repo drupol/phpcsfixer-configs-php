@@ -17,16 +17,21 @@ jobs:
                 php-versions: ['7.4']
 
         steps:
+            - name: Set git to use LF
+              run: |
+                  git config --global core.autocrlf false
+                  git config --global core.eol lf
+
             - name: Checkout
-              uses: actions/checkout@master
+              uses: actions/checkout@v2.3.4
               with:
                   fetch-depth: 1
 
             - name: Install PHP
-              uses: shivammathur/setup-php@master
+              uses: shivammathur/setup-php@v2
               with:
                   php-version: ${{ matrix.php-versions }}
-                  extensions: xdebug,mbstring
+                  extensions: pcov,xdebug,mbstring
 
             - name: Get Composer Cache Directory
               id: composer-cache
@@ -40,14 +45,12 @@ jobs:
                   restore-keys: ${{ runner.os }}-composer-
 
             - name: Install dependencies
-              run: composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+              run: composer install --no-progress --prefer-dist --optimize-autoloader
 
             - name: Run Grumphp
               run: vendor/bin/grumphp run
-              env:
-                  STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
 
-            - name: Scrutinizer
+            - name: Send Scrutinizer data
               run: |
                   wget https://scrutinizer-ci.com/ocular.phar
                   php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
