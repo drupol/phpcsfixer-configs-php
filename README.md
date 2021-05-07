@@ -1,19 +1,17 @@
-[![Latest Stable Version](https://img.shields.io/packagist/v/drupol/phpcsfixer-configs-php.svg?style=flat-square)](https://packagist.org/packages/drupol/phpcsfixer-configs-php)
- [![GitHub stars](https://img.shields.io/github/stars/drupol/phpcsfixer-configs-php.svg?style=flat-square)](https://packagist.org/packages/drupol/phpcsfixer-configs-php)
- [![Total Downloads](https://img.shields.io/packagist/dt/drupol/phpcsfixer-configs-php.svg?style=flat-square)](https://packagist.org/packages/drupol/phpcsfixer-configs-php)
- [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/drupol/phpcsfixer-configs-php/Continuous%20Integration?style=flat-square)](https://github.com/drupol/phpcsfixer-configs-php/actions)
- [![Scrutinizer code quality](https://img.shields.io/scrutinizer/quality/g/drupol/phpcsfixer-configs-php/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/drupol/phpcsfixer-configs-php/?branch=master)
- [![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/drupol/phpcsfixer-configs-php/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/drupol/phpcsfixer-configs-php/?branch=master)
- [![Mutation testing badge](https://badge.stryker-mutator.io/github.com/drupol/phpcsfixer-configs-php/master)](https://stryker-mutator.github.io)
- [![License](https://img.shields.io/packagist/l/drupol/phpcsfixer-configs-php.svg?style=flat-square)](https://packagist.org/packages/drupol/phpcsfixer-configs-php)
- [![Say Thanks!](https://img.shields.io/badge/Say-thanks-brightgreen.svg?style=flat-square)](https://saythanks.io/to/drupol)
- [![Donate!](https://img.shields.io/badge/Donate-Paypal-brightgreen.svg?style=flat-square)](https://paypal.me/drupol)
- 
+[![Latest Stable Version][latest stable version]][1]
+ [![GitHub stars][github stars]][1]
+ [![Total Downloads][total downloads]][1]
+ [![GitHub Workflow Status][github workflow status]][2]
+ [![License][license]][1]
+ [![Donate!][donate github]][5]
+ [![Donate!][donate paypal]][6]
+
 # PHP-CS-Fixer Configurations
 
 ## Description
 
-This package provides a set [PHP-Cs-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) configuration objects ready to be used in any project using PHP-Cs-Fixer.
+This package provides a set [PHP-Cs-Fixer][7]
+configuration objects ready to be used in any project using PHP-Cs-Fixer.
 
 ## Documentation
 
@@ -64,3 +62,19 @@ Before each commit some inspections are executed with [GrumPHP](https://github.c
 ## Contributing
 
 Feel free to contribute to this library by sending Github pull requests. I'm quite reactive :-)
+
+[1]: https://packagist.org/packages/drupol/phpcsfixer-configs-php
+[2]: https://github.com/drupol/phpcsfixer-configs-php/actions
+[latest stable version]: https://img.shields.io/packagist/v/drupol/phpcsfixer-configs-php.svg?style=flat-square
+[github stars]: https://img.shields.io/github/stars/drupol/phpcsfixer-configs-php.svg?style=flat-square
+[total downloads]: https://img.shields.io/packagist/dt/drupol/phpcsfixer-configs-php.svg?style=flat-square
+[github workflow status]: https://img.shields.io/github/workflow/status/drupol/phpcsfixer-configs-php/Continuous%20Integration?style=flat-square
+[code quality]: https://img.shields.io/scrutinizer/quality/g/drupol/phpcsfixer-configs-php/master.svg?style=flat-square
+[3]: https://scrutinizer-ci.com/g/drupol/phpcsfixer-configs-php/?branch=master
+[4]: https://shepherd.dev/github/drupol/phpcsfixer-configs-php
+[license]: https://img.shields.io/packagist/l/drupol/phpcsfixer-configs-php.svg?style=flat-square
+[donate github]: https://img.shields.io/badge/Sponsor-Github-brightgreen.svg?style=flat-square
+[donate paypal]: https://img.shields.io/badge/Sponsor-Paypal-brightgreen.svg?style=flat-square
+[5]: https://github.com/sponsors/drupol
+[6]: https://www.paypal.me/drupol
+[7]: https://github.com/FriendsOfPHP/PHP-CS-Fixer

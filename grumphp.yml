@@ -12,10 +12,4 @@ grumphp:
             using_cache: false
         phpspec:
           verbose: true
-        infection:
-          threads: 10
-          test_framework: phpspec
-          configuration: infection.json.dist
-          min_msi: 20
-          min_covered_msi: 20
 
