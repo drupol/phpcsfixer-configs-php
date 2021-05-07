@@ -7,14 +7,14 @@ parameters:
         array_syntax:
             syntax: long
         backtick_to_shell_exec: true
-        blank_line_before_return: false
+        binary_operator_spaces: true
         blank_line_before_statement:
             statements:
                 - break
+                - case
                 - continue
                 - declare
                 - default
-                - die
                 - do
                 - exit
                 - for
@@ -31,13 +31,19 @@ parameters:
                 - try
                 - while
                 - yield
+                - yield_from
+        braces:
+            allow_single_line_closure: true
+            position_after_functions_and_oop_constructs: next
+            position_after_control_structures: same
+            position_after_anonymous_constructs: same
         cast_spaces:
             space: single
         class_attributes_separation:
             elements:
-                - const
-                - method
-                - property
+                const: one
+                method: one
+                property: one
         class_definition:
             multi_line_extends_each_single_line: true
         class_keyword_remove: false
@@ -51,6 +57,8 @@ parameters:
         constant_case:
             case: lower
         date_time_immutable: false
+        declare_equal_normalize:
+            space: none
         declare_strict_types: false
         dir_constant: true
         doctrine_annotation_array_assignment:
@@ -66,6 +74,8 @@ parameters:
             before_argument_assignments: false
             before_array_assignments_colon: false
             before_array_assignments_equals: false
+        echo_tag_syntax:
+            format: long
         elseif: true
         ereg_to_preg: true
         error_suppression:
@@ -82,12 +92,18 @@ parameters:
         fully_qualified_strict_types: true
         function_to_constant: true
         function_typehint_space: true
-        general_phpdoc_annotation_remove: false
+        general_phpdoc_annotation_remove:
+            annotations:
+                - inheritdoc
+                - package
+                - subpackage
+                - author
+                - version
+        general_phpdoc_tag_rename: true
         global_namespace_import:
             import_classes: true
             import_constants: true
             import_functions: true
-        hash_to_slash_comment: true
         header_comment: false
         heredoc_indentation: false
         heredoc_to_nowdoc: true
@@ -105,10 +121,9 @@ parameters:
         magic_method_casing: true
         mb_str_functions: false
         method_argument_space:
-            ensure_fully_multiline: true
+            on_multiline: ensure_fully_multiline
             keep_multiple_spaces_after_comma: false
         method_chaining_indentation: true
-        method_separation: true
         modernize_types_casting: true
         multiline_comment_opening_closing: true
         multiline_whitespace_before_semicolons:
@@ -118,6 +133,7 @@ parameters:
         native_function_invocation:
             include:
                 - '@compiler_optimized'
+            scope: namespaced
             strict: true
         native_function_type_declaration_casing: true
         new_with_braces: true
@@ -145,30 +161,39 @@ parameters:
                 - switch
                 - throw
                 - use_trait
-        no_extra_consecutive_blank_lines: false
         no_homoglyph_names: true
         no_leading_namespace_whitespace: true
         no_mixed_echo_print:
             use: echo
         no_multiline_whitespace_around_double_arrow: true
-        no_multiline_whitespace_before_semicolons: false
         no_null_property_initialization: true
         no_php4_constructor: false
         no_short_bool_cast: true
-        no_short_echo_tag: true
         no_singleline_whitespace_before_semicolons: true
-        no_spaces_around_offset: true
+        no_spaces_around_offset:
+            positions:
+                - inside
+                - outside
         no_spaces_after_function_name: true
         no_spaces_inside_parenthesis: true
         no_superfluous_elseif: true
         no_superfluous_phpdoc_tags:
             allow_mixed: true
             allow_unused_params: false
-            remove_inheritdoc: false
+            remove_inheritdoc: true
         no_trailing_comma_in_list_call: true
         no_trailing_comma_in_singleline_array: true
+        no_trailing_whitespace: true
         no_trailing_whitespace_in_comment: true
-        no_unneeded_control_parentheses: true
+        no_unneeded_control_parentheses:
+            statements:
+                - break
+                - clone
+                - continue
+                - echo_print
+                - return
+                - switch_case
+                - yield
         no_unneeded_curly_braces: true
         no_unneeded_final_method: true
         no_unreachable_default_argument_value: true
@@ -202,7 +227,7 @@ parameters:
                 - method_public
                 - method_protected
                 - method_private
-            sortAlgorithm: alpha
+            sort_algorithm: alpha
         ordered_imports:
             imports_order:
                 - class
@@ -210,7 +235,12 @@ parameters:
                 - const
             sort_algorithm: alpha
         ordered_interfaces: true
-        php_unit_construct: true
+        php_unit_construct:
+            assertions:
+                - assertSame
+                - assertEquals
+                - assertNotEquals
+                - assertNotSame
         php_unit_dedicate_assert: true
         php_unit_dedicate_assert_internal_type: false
         php_unit_expectation:
@@ -229,7 +259,6 @@ parameters:
         php_unit_no_expectation_annotation:
             target: newest
             use_class_const: true
-        php_unit_ordered_covers: true
         php_unit_set_up_tear_down_visibility: true
         php_unit_size_class: false
         php_unit_strict: false
@@ -242,7 +271,7 @@ parameters:
         phpdoc_align: false
         phpdoc_annotation_without_dot: false
         phpdoc_indent: true
-        phpdoc_inline_tag: true
+        phpdoc_inline_tag_normalizer: true
         phpdoc_line_span:
             const: multi
             property: multi
@@ -253,11 +282,13 @@ parameters:
         phpdoc_no_package: true
         phpdoc_no_useless_inheritdoc: true
         phpdoc_order: true
+        phpdoc_order_by_value: true
         phpdoc_return_self_reference: true
         phpdoc_scalar: true
         phpdoc_separation: true
         phpdoc_single_line_var_spacing: true
         phpdoc_summary: true
+        phpdoc_tag_type: true
         phpdoc_to_comment: false
         phpdoc_to_return_type: false
         phpdoc_trim: true
@@ -269,10 +300,7 @@ parameters:
         phpdoc_var_annotation_correct_order: true
         phpdoc_var_without_name: true
         pow_to_exponentiation: true
-        pre_increment: false
         protected_to_private: true
-        psr0: false
-        psr4: true
         random_api_migration: true
         return_assignment: true
         return_type_declaration:
@@ -281,14 +309,20 @@ parameters:
         self_static_accessor: true
         semicolon_after_instruction: true
         set_type_to_cast: true
-        silenced_deprecation_error: false
+        single_class_element_per_statement:
+            elements:
+                - const
+                - property
         single_blank_line_at_eof: true
+        single_import_per_statement: false
         single_line_after_imports: true
         single_line_throw: false
         simple_to_complex_string_variable: true
         simplified_null_return: false
         single_blank_line_before_namespace: true
-        single_line_comment_style: false
+        single_line_comment_style:
+            comment_types:
+                - hash
         single_quote: true
         single_trait_insert_per_statement: true
         space_after_semicolon: true
@@ -299,8 +333,9 @@ parameters:
         strict_param: true
         string_line_ending: true
         ternary_to_null_coalescing: false
-        trailing_comma_in_multiline_array: true
+        trailing_comma_in_multiline: true
         trim_array_spaces: true
+        unary_operator_spaces: true
         void_return: false
         whitespace_after_comma_in_array: true
         yoda_style:

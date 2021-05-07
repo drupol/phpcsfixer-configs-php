@@ -1,37 +1,4 @@
 parameters:
     rules:
-        '@PSR2': true
-        binary_operator_spaces: true
-        braces:
-            allow_single_line_closure: true
-            position_after_functions_and_oop_constructs: next
-            position_after_control_structures: same
-            position_after_anonymous_constructs: same
-        blank_line_after_opening_tag: true
-        declare_equal_normalize:
-            space: none
-        lowercase_cast: true
-        new_with_braces: true
-        no_blank_lines_after_class_opening: true
-        no_extra_blank_lines: false
-        no_leading_import_slash: true
-        no_trailing_whitespace: true
-        ordered_class_elements:
-            order:
-                - use_trait
-        ordered_imports:
-            imports_order:
-                - class
-                - function
-                - const
-        return_type_declaration:
-            space_before: none
-        short_scalar_cast: true
-        single_import_per_statement: false
-        ternary_operator_spaces: true
-        unary_operator_spaces: true
-        visibility_required:
-            elements:
-                - const
-                - method
-                - property
+        '@PSR12': true
+        '@PSR12:risky': true
