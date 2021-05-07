@@ -27,10 +27,7 @@ final class Psr12 extends YamlConfig
             );
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getFinder()
+    public function getFinder(): iterable
     {
         return parent::getFinder()
             ->in(getcwd())

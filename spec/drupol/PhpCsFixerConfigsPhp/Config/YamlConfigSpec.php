@@ -22,7 +22,7 @@ class YamlConfigSpec extends ObjectBehavior
             ->getRules()
             ->shouldReturn(
                 [
-                    '@PSR2' => true,
+                    '@PSR12' => true,
                     'a' => true,
                     'b' => true,
                 ]

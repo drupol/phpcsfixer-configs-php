@@ -14,9 +14,6 @@ use Symfony\Component\Yaml\Yaml;
  */
 class YamlConfig extends Config implements PhpCsFixerConfigInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public function withRulesFromConfig(...$configs): PhpCsFixerConfigInterface
     {
         $rules = array_reduce(
@@ -36,9 +33,6 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
         return $clone;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function withRulesFromYaml(...$filenames): PhpCsFixerConfigInterface
     {
         $rules = array_merge(
@@ -55,9 +49,6 @@ class YamlConfig extends Config implements PhpCsFixerConfigInterface
         return $clone;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function withRulesFromYamlOnly(...$filenames): PhpCsFixerConfigInterface
     {
         $rules = $this->getRulesFromFiles(...$filenames);
