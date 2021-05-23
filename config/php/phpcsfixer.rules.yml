@@ -288,7 +288,9 @@ parameters:
         phpdoc_separation: true
         phpdoc_single_line_var_spacing: true
         phpdoc_summary: true
-        phpdoc_tag_type: true
+        phpdoc_tag_type:
+            tags:
+                inheritDoc: inline
         phpdoc_to_comment: false
         phpdoc_to_return_type: false
         phpdoc_trim: true
