@@ -5,10 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.0](https://github.com/drupol/phpcsfixer-configs-php/compare/1.0.34...2.0.0)
+## [2.0.2](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.1...2.0.2)
+
+### Merged
+
+- Bump shivammathur/setup-php from 2.11.0 to 2.12.0 [`#8`](https://github.com/drupol/phpcsfixer-configs-php/pull/8)
+- Bump actions/stale from 3.0.18 to 4 [`#9`](https://github.com/drupol/phpcsfixer-configs-php/pull/9)
+- Update phpro/grumphp requirement from 1.1.* || 1.3.* to 1.1.* || 1.3.* || 1.4.* [`#10`](https://github.com/drupol/phpcsfixer-configs-php/pull/10)
+- Bump actions/cache from 2.1.5 to 2.1.6 [`#7`](https://github.com/drupol/phpcsfixer-configs-php/pull/7)
 
 ### Commits
 
+- Update composer.json until FriendsOfPHP/PHP-CS-Fixer#5798 is fixed. [`aac87f6`](https://github.com/drupol/phpcsfixer-configs-php/commit/aac87f6ac1922829ea4d75f03297504c87b15fab)
+
+## [2.0.1](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.0...2.0.1) - 2021-05-23
+
+### Merged
+
+- Bump shivammathur/setup-php from 2 to 2.11.0 [`#5`](https://github.com/drupol/phpcsfixer-configs-php/pull/5)
+- Update phpro/grumphp requirement from 1.1.* to 1.1.* || 1.3.* [`#4`](https://github.com/drupol/phpcsfixer-configs-php/pull/4)
+- Bump actions/cache from v1 to v2.1.5 [`#3`](https://github.com/drupol/phpcsfixer-configs-php/pull/3)
+
+### Commits
+
+- Prevent issue with @param. [`f8ec2d1`](https://github.com/drupol/phpcsfixer-configs-php/commit/f8ec2d163b0876fe2669221099eae3ccb3206e89)
+- ci: Update github actions. [`3df76b4`](https://github.com/drupol/phpcsfixer-configs-php/commit/3df76b4c4cc76c27c71b77c275cdedb82610b099)
+
+## [2.0.0](https://github.com/drupol/phpcsfixer-configs-php/compare/1.0.34...2.0.0) - 2021-05-07
+
+### Commits
+
+- docs: Update changelog. [`53fcf5a`](https://github.com/drupol/phpcsfixer-configs-php/commit/53fcf5a56e0860eecc91b589b2e68bea875d1ccb)
 - Update static files, documentation, docker, readme, ci. [`77f825f`](https://github.com/drupol/phpcsfixer-configs-php/commit/77f825f19451256805fbb1a2e638e962e588c247)
 - Fix codestyle. [`fd0041f`](https://github.com/drupol/phpcsfixer-configs-php/commit/fd0041fa3b24cc682cad607d9dbd1e33fa7bdffd)
 - Update composer.json [`6b0028c`](https://github.com/drupol/phpcsfixer-configs-php/commit/6b0028c0e84cfccb62021beede8e0f8e6c2dceef)
