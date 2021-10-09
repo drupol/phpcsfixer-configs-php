@@ -5,10 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.6](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.5...2.0.6)
+## [2.0.7](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.6...2.0.7)
+
+### Merged
+
+- Bump shivammathur/setup-php from 2.14.0 to 2.15.0 [`#14`](https://github.com/drupol/phpcsfixer-configs-php/pull/14)
+- Bump shivammathur/setup-php from 2.13.0 to 2.14.0 [`#12`](https://github.com/drupol/phpcsfixer-configs-php/pull/12)
 
 ### Commits
 
+- Prevent installation of 3.2 because of FriendsOfPHP/PHP-CS-Fixer#5921. [`663b07c`](https://github.com/drupol/phpcsfixer-configs-php/commit/663b07c41ce01ab38c1d27bd65838ba69be2f41a)
+
+## [2.0.6](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.5...2.0.6) - 2021-08-30
+
+### Commits
+
+- docs: Add/update CHANGELOG. [`1c9481d`](https://github.com/drupol/phpcsfixer-configs-php/commit/1c9481de01df215177ce996ae60fc0d3c1a3c3aa)
 - Prevent installation of PHPCSFixer 3.0.3 because of FriendsOfPHP/PHP-CS-Fixer#5921. [`f962afc`](https://github.com/drupol/phpcsfixer-configs-php/commit/f962afc845243fdf7bc26d36bf1785b233e97f1b)
 
 ## [2.0.5](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.4...2.0.5) - 2021-08-30
