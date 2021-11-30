@@ -5,7 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.8](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.7...2.0.8)
+## [2.0.9](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.8...2.0.9)
+
+### Merged
+
+- Bump shivammathur/setup-php from 2.15.0 to 2.16.0 [`#18`](https://github.com/drupol/phpcsfixer-configs-php/pull/18)
+- Bump actions/cache from 2.1.6 to 2.1.7 [`#17`](https://github.com/drupol/phpcsfixer-configs-php/pull/17)
+
+### Commits
+
+- Disable `phpdoc_types_order` while waiting for FriendsOfPHP/PHP-CS-Fixer#5921. [`33303b3`](https://github.com/drupol/phpcsfixer-configs-php/commit/33303b32debd5476c0eba8acce805bc29b4bf9e9)
+
+## [2.0.8](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.7...2.0.8) - 2021-11-17
 
 ### Merged
 
@@ -14,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Commits
 
+- docs: Add/update CHANGELOG. [`78531c8`](https://github.com/drupol/phpcsfixer-configs-php/commit/78531c8afa10df4a3a315bed83733bb800158282)
 - Prevent installation of 3.3 because of FriendsOfPHP/PHP-CS-Fixer#5921. [`fe1f2a2`](https://github.com/drupol/phpcsfixer-configs-php/commit/fe1f2a24df83932a2b5579ec29bd66f82de1cac1)
 
 ## [2.0.7](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.6...2.0.7) - 2021-10-09
