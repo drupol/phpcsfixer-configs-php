@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.9](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.8...2.0.9)
+## [2.0.10](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.9...2.0.10)
+
+### Commits
+
+- Update default PHP rules. [`b635260`](https://github.com/drupol/phpcsfixer-configs-php/commit/b6352605218cf32d6260cbcccb9f27f2d445e8fe)
+
+## [2.0.9](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.8...2.0.9) - 2021-11-30
 
 ### Merged
 
@@ -14,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Commits
 
+- docs: Add/update CHANGELOG. [`d8530a3`](https://github.com/drupol/phpcsfixer-configs-php/commit/d8530a3c3ade75abad75b4d46cc78c6efda8ae14)
 - Disable `phpdoc_types_order` while waiting for FriendsOfPHP/PHP-CS-Fixer#5921. [`33303b3`](https://github.com/drupol/phpcsfixer-configs-php/commit/33303b32debd5476c0eba8acce805bc29b4bf9e9)
 
 ## [2.0.8](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.7...2.0.8) - 2021-11-17
