@@ -25,7 +25,10 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpro/grumphp": true
+        }
     },
     "require-dev": {
         "friends-of-phpspec/phpspec-code-coverage": "^6",
