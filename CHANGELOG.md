@@ -5,10 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.10](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.9...2.0.10)
+## [2.0.11](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.10...2.0.11)
 
 ### Commits
 
+- Update default PHP rules. [`baeddaf`](https://github.com/drupol/phpcsfixer-configs-php/commit/baeddafbf3e78ac356cb8c089a76a5737f45fc77)
+- chore: Normalize `composer.json`. [`6edfd3a`](https://github.com/drupol/phpcsfixer-configs-php/commit/6edfd3a3cbd8b47b609be7d8bb434fef7db7ebc5)
+
+## [2.0.10](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.9...2.0.10) - 2021-11-30
+
+### Commits
+
+- docs: Add/update CHANGELOG. [`350a016`](https://github.com/drupol/phpcsfixer-configs-php/commit/350a01658a2549c0f426cf9f1bb40bb32bf9163a)
 - Update default PHP rules. [`b635260`](https://github.com/drupol/phpcsfixer-configs-php/commit/b6352605218cf32d6260cbcccb9f27f2d445e8fe)
 
 ## [2.0.9](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.8...2.0.9) - 2021-11-30
