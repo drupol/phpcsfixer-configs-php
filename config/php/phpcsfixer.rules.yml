@@ -44,9 +44,9 @@ parameters:
                 const: one
                 method: one
                 property: one
+                trait_import: one
         class_definition:
             multi_line_extends_each_single_line: true
-        class_keyword_remove: false
         combine_consecutive_issets: true
         combine_consecutive_unsets: true
         combine_nested_dirname: false
@@ -161,7 +161,6 @@ parameters:
                 - square_brace_block
                 - switch
                 - throw
-                - use_trait
         no_homoglyph_names: true
         no_leading_namespace_whitespace: true
         no_mixed_echo_print:
@@ -235,14 +234,14 @@ parameters:
                 - function
                 - const
             sort_algorithm: alpha
-        ordered_interfaces: true
+        ordered_interfaces: false
         php_unit_construct:
             assertions:
                 - assertSame
                 - assertEquals
                 - assertNotEquals
                 - assertNotSame
-        php_unit_dedicate_assert: true
+        php_unit_dedicate_assert: false
         php_unit_dedicate_assert_internal_type: false
         php_unit_expectation:
             target: newest
