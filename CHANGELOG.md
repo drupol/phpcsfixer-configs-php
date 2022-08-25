@@ -5,10 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.11](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.10...2.0.11)
+## [2.0.12](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.11...2.0.12)
+
+### Merged
+
+- chore(deps): Bump shivammathur/setup-php from 2.18.0 to 2.18.1 [`#25`](https://github.com/drupol/phpcsfixer-configs-php/pull/25)
+- chore(deps): Bump actions/stale from 4 to 5 [`#24`](https://github.com/drupol/phpcsfixer-configs-php/pull/24)
+- chore(deps): Bump shivammathur/setup-php from 2.17.1 to 2.18.0 [`#23`](https://github.com/drupol/phpcsfixer-configs-php/pull/23)
+- Bump actions/cache from 2.1.7 to 3 [`#22`](https://github.com/drupol/phpcsfixer-configs-php/pull/22)
+- Bump shivammathur/setup-php from 2.17.0 to 2.17.1 [`#20`](https://github.com/drupol/phpcsfixer-configs-php/pull/20)
+- Bump actions/checkout from 2.4.0 to 3 [`#21`](https://github.com/drupol/phpcsfixer-configs-php/pull/21)
+- Bump shivammathur/setup-php from 2.16.0 to 2.17.0 [`#19`](https://github.com/drupol/phpcsfixer-configs-php/pull/19)
 
 ### Commits
 
+- chore: Update static files. [`6243209`](https://github.com/drupol/phpcsfixer-configs-php/commit/6243209d7cef13dc8d173ed4bb49875a646f6d6a)
+
+## [2.0.11](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.10...2.0.11) - 2022-01-24
+
+### Commits
+
+- docs: Add/update CHANGELOG. [`ae5b265`](https://github.com/drupol/phpcsfixer-configs-php/commit/ae5b2651e2fb5bf39a3c8dc6622271e78a90dfcb)
 - Update default PHP rules. [`baeddaf`](https://github.com/drupol/phpcsfixer-configs-php/commit/baeddafbf3e78ac356cb8c089a76a5737f45fc77)
 - chore: Normalize `composer.json`. [`6edfd3a`](https://github.com/drupol/phpcsfixer-configs-php/commit/6edfd3a3cbd8b47b609be7d8bb434fef7db7ebc5)
 
@@ -215,23 +232,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bump version. [`5f74f61`](https://github.com/drupol/phpcsfixer-configs-php/commit/5f74f61181fb45ad669b2089243720fe8c83a6e3)
 - Migration to PHP 7.1, update README. [`f97030a`](https://github.com/drupol/phpcsfixer-configs-php/commit/f97030ae020ff264d333e4b735ac70b0f67856fd)
 
-## [1.0.20](https://github.com/drupol/phpcsfixer-configs-php/compare/1.0.19...1.0.20) - 2019-12-27
+## [1.0.20](https://github.com/drupol/phpcsfixer-configs-php/compare/1.0.17...1.0.20) - 2019-12-27
 
 ### Commits
 
 - Disable date_time_immutable property. [`c8f0912`](https://github.com/drupol/phpcsfixer-configs-php/commit/c8f0912ec6235210775d553761c3b27fd4048605)
 - Bump versions, remove Travis, update Github actions. [`238f1cc`](https://github.com/drupol/phpcsfixer-configs-php/commit/238f1cc1f5ff5b48371b3cbd642ef8d73b428db1)
-
-## [1.0.19](https://github.com/drupol/phpcsfixer-configs-php/compare/1.0.18...1.0.19) - 2019-12-05
-
-### Commits
-
 - Fix potential conflict with PHPStan ^0.12. [`1fbe9e7`](https://github.com/drupol/phpcsfixer-configs-php/commit/1fbe9e71f2d64f6012ae1af12cc437066b8b4c10)
-
-## [1.0.18](https://github.com/drupol/phpcsfixer-configs-php/compare/1.0.17...1.0.18) - 2019-12-05
-
-### Commits
-
 - Code style update. [`9f1beb1`](https://github.com/drupol/phpcsfixer-configs-php/commit/9f1beb1639840d53f1d5d9564802015d99b3b7d0)
 
 ## 1.0.17 - 2019-12-05
