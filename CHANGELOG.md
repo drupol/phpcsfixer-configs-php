@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.12](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.11...2.0.12)
+## [2.0.13](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.12...2.0.13)
+
+### Commits
+
+- bump version [`0ad3caa`](https://github.com/drupol/phpcsfixer-configs-php/commit/0ad3caa01beb44e74ca515ac147a5af31efe8636)
+- add: `array_push` [`0a032a6`](https://github.com/drupol/phpcsfixer-configs-php/commit/0a032a68d5596bf2ecb07bfc984f611fbac17621)
+
+## [2.0.12](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.11...2.0.12) - 2022-08-25
 
 ### Merged
 
@@ -19,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Commits
 
+- Add CHANGELOG.md [`56d51a4`](https://github.com/drupol/phpcsfixer-configs-php/commit/56d51a44b15df3b8d9453d81b5eee29974f3527c)
 - chore: Update static files. [`6243209`](https://github.com/drupol/phpcsfixer-configs-php/commit/6243209d7cef13dc8d173ed4bb49875a646f6d6a)
 
 ## [2.0.11](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.10...2.0.11) - 2022-01-24
