@@ -5,10 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.13](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.12...2.0.13)
+## [2.0.14](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.13...2.0.14)
+
+### Merged
+
+- Issue #38: Make the package compatible with Symfony 6. [`#39`](https://github.com/drupol/phpcsfixer-configs-php/pull/39)
+- chore(deps): Bump actions/stale from 5 to 7 [`#36`](https://github.com/drupol/phpcsfixer-configs-php/pull/36)
+- chore(deps): Bump shivammathur/setup-php from 2.18.1 to 2.22.0 [`#35`](https://github.com/drupol/phpcsfixer-configs-php/pull/35)
+- chore(deps-dev): Update phpro/grumphp requirement from 1.1.* || 1.3.* || 1.4.* to 1.1.* || 1.3.* || 1.4.* || 1.13.* [`#34`](https://github.com/drupol/phpcsfixer-configs-php/pull/34)
+
+## [2.0.13](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.12...2.0.13) - 2022-10-12
 
 ### Commits
 
+- docs: update changelog [`5dadf1f`](https://github.com/drupol/phpcsfixer-configs-php/commit/5dadf1f29908c28b1699396e668ff24350ff3ff0)
 - bump version [`0ad3caa`](https://github.com/drupol/phpcsfixer-configs-php/commit/0ad3caa01beb44e74ca515ac147a5af31efe8636)
 - add: `array_push` [`0a032a6`](https://github.com/drupol/phpcsfixer-configs-php/commit/0a032a68d5596bf2ecb07bfc984f611fbac17621)
 
