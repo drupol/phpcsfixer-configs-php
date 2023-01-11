@@ -5,7 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.14](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.13...2.0.14)
+## [2.0.15](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.14...2.0.15)
+
+### Commits
+
+- chore: update `composer.json` [`6b1b57c`](https://github.com/drupol/phpcsfixer-configs-php/commit/6b1b57c733b8d69ab39794e7596886e990c97bfe)
+- feat: update rule `no_extra_blank_lines` [`6cccb4d`](https://github.com/drupol/phpcsfixer-configs-php/commit/6cccb4d89df08b50843c89a002789edb910c343f)
+- chore: update `.envrc` [`06bb88b`](https://github.com/drupol/phpcsfixer-configs-php/commit/06bb88bdfd2bf63d27311925b3bacfd4a54fe546)
+
+## [2.0.14](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.13...2.0.14) - 2022-12-28
 
 ### Merged
 
@@ -13,6 +21,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - chore(deps): Bump actions/stale from 5 to 7 [`#36`](https://github.com/drupol/phpcsfixer-configs-php/pull/36)
 - chore(deps): Bump shivammathur/setup-php from 2.18.1 to 2.22.0 [`#35`](https://github.com/drupol/phpcsfixer-configs-php/pull/35)
 - chore(deps-dev): Update phpro/grumphp requirement from 1.1.* || 1.3.* || 1.4.* to 1.1.* || 1.3.* || 1.4.* || 1.13.* [`#34`](https://github.com/drupol/phpcsfixer-configs-php/pull/34)
+
+### Commits
+
+- docs: update changelog [`c81d4ee`](https://github.com/drupol/phpcsfixer-configs-php/commit/c81d4ee0e3d4773c9250e5234a022d0074c84557)
 
 ## [2.0.13](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.12...2.0.13) - 2022-10-12
 
