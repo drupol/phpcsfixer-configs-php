@@ -162,6 +162,8 @@ parameters:
                 - square_brace_block
                 - switch
                 - throw
+                - use
+                - use_trait
         no_homoglyph_names: true
         no_leading_namespace_whitespace: true
         no_mixed_echo_print:
