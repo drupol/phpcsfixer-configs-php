@@ -33,11 +33,33 @@ parameters:
                 - while
                 - yield
                 - yield_from
-        braces:
-            allow_single_line_closure: true
-            position_after_functions_and_oop_constructs: next
-            position_after_control_structures: same
-            position_after_anonymous_constructs: same
+        blank_lines_before_namespace: true
+
+        control_structure_braces: true
+        curly_braces_position:
+            allow_single_line_anonymous_functions: true
+            allow_single_line_empty_anonymous_classes: true
+        control_structure_continuation_position:
+            position: same_line
+        declare_parentheses: true
+        statement_indentation: true
+        no_multiple_statements_per_line: true
+        # Differs from PSR12 but includes it.
+        no_extra_blank_lines:
+            tokens:
+                - break
+                - case
+                - continue
+                - curly_brace_block
+                - default
+                - extra
+                - parenthesis_brace_block
+                - return
+                - square_brace_block
+                - switch
+                - throw
+                - use
+                - use_trait
         cast_spaces:
             space: single
         class_attributes_separation:
@@ -143,27 +165,10 @@ parameters:
         no_alternative_syntax: true
         no_binary_string: true
         no_blank_lines_after_phpdoc: true
-        no_blank_lines_before_namespace: false
         no_closing_tag: true
         no_empty_comment: true
         no_empty_phpdoc: true
         no_empty_statement: true
-        # Differs from PSR12 but includes it.
-        no_extra_blank_lines:
-            tokens:
-                - break
-                - case
-                - continue
-                - curly_brace_block
-                - default
-                - extra
-                - parenthesis_brace_block
-                - return
-                - square_brace_block
-                - switch
-                - throw
-                - use
-                - use_trait
         no_homoglyph_names: true
         no_leading_namespace_whitespace: true
         no_mixed_echo_print:
@@ -185,7 +190,12 @@ parameters:
             allow_unused_params: false
             remove_inheritdoc: true
         no_trailing_comma_in_list_call: true
-        no_trailing_comma_in_singleline_array: true
+        no_trailing_comma_in_singleline:
+            elements:
+                - arguments
+                - array_destructuring
+                - array
+                - group_import
         no_trailing_whitespace: true
         no_trailing_whitespace_in_comment: true
         no_unneeded_control_parentheses:
@@ -323,7 +333,6 @@ parameters:
         single_line_throw: false
         simple_to_complex_string_variable: true
         simplified_null_return: false
-        single_blank_line_before_namespace: true
         single_line_comment_style:
             comment_types:
                 - hash
