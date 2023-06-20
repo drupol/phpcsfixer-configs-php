@@ -5,10 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.15](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.14...2.0.15)
+## [2.0.16](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.15...2.0.16)
+
+### Merged
+
+- chore(deps): Bump actions/stale from 7 to 8 [`#41`](https://github.com/drupol/phpcsfixer-configs-php/pull/41)
 
 ### Commits
 
+- chore: update rules, update deprecated rules [`8d19c3e`](https://github.com/drupol/phpcsfixer-configs-php/commit/8d19c3e3cc7aeffc998d29bccc32d53bfc0ba4c6)
+
+## [2.0.15](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.14...2.0.15) - 2023-01-11
+
+### Commits
+
+- docs: Update changelog. [`e1161d0`](https://github.com/drupol/phpcsfixer-configs-php/commit/e1161d0c77b16d0f9586b2346356b7d1ed6c7679)
 - chore: update `composer.json` [`6b1b57c`](https://github.com/drupol/phpcsfixer-configs-php/commit/6b1b57c733b8d69ab39794e7596886e990c97bfe)
 - feat: update rule `no_extra_blank_lines` [`6cccb4d`](https://github.com/drupol/phpcsfixer-configs-php/commit/6cccb4d89df08b50843c89a002789edb910c343f)
 - chore: update `.envrc` [`06bb88b`](https://github.com/drupol/phpcsfixer-configs-php/commit/06bb88bdfd2bf63d27311925b3bacfd4a54fe546)
