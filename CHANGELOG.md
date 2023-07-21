@@ -5,7 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.16](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.15...2.0.16)
+## [2.0.17](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.16...2.0.17)
+
+### Merged
+
+- Issue #46: Update Composer requirements. [`#47`](https://github.com/drupol/phpcsfixer-configs-php/pull/47)
+
+### Commits
+
+- feat: add config for PHP 8.2 [`f71d06e`](https://github.com/drupol/phpcsfixer-configs-php/commit/f71d06ef0eee03ee8ebb56d5a1f5419405b9e2ca)
+
+## [2.0.16](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.15...2.0.16) - 2023-06-20
 
 ### Merged
 
@@ -13,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Commits
 
+- docs: update CHANGELOG [`db59c45`](https://github.com/drupol/phpcsfixer-configs-php/commit/db59c45a0643160ce7b4caea8e9ef3e35014b8cc)
 - chore: update rules, update deprecated rules [`8d19c3e`](https://github.com/drupol/phpcsfixer-configs-php/commit/8d19c3e3cc7aeffc998d29bccc32d53bfc0ba4c6)
 
 ## [2.0.15](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.14...2.0.15) - 2023-01-11
