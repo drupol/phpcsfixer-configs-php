@@ -5,10 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.18](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.17...2.0.18)
+## [2.0.19](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.18...2.0.19)
 
 ### Commits
 
+- fix: memory issue [`6e1aca0`](https://github.com/drupol/phpcsfixer-configs-php/commit/6e1aca0a91b2bb388898c4e60c898cf88ff66ec0)
+
+## [2.0.18](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.17...2.0.18) - 2023-07-21
+
+### Commits
+
+- docs: update CHANGELOG [`bad821d`](https://github.com/drupol/phpcsfixer-configs-php/commit/bad821d63b8650034ee4f33d590efdeb812f1409)
 - fix: wrong ordering of configuration [`f3d650b`](https://github.com/drupol/phpcsfixer-configs-php/commit/f3d650b22e5349f9a303614842e778c98c88091c)
 
 ## [2.0.17](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.16...2.0.17) - 2023-07-21
