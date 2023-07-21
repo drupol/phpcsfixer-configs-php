@@ -8,9 +8,9 @@ final class Php82 extends YamlConfig
 {
     public function __construct()
     {
-        parent::__construct('drupol/phpcsfixer-configs-php/php73');
+        parent::__construct('drupol/phpcsfixer-configs-php/php82');
 
-        $parent = (new Php82())->withRulesFromYaml((new Php73)->getRules());
+        $parent = (new Php73())->withRulesFromYaml((new Php82)->getRules());
 
         $this
             ->setRules(
