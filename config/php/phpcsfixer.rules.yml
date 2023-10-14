@@ -34,11 +34,8 @@ parameters:
                 - yield
                 - yield_from
         blank_lines_before_namespace: true
-
+        braces_position: true
         control_structure_braces: true
-        curly_braces_position:
-            allow_single_line_anonymous_functions: true
-            allow_single_line_empty_anonymous_classes: true
         control_structure_continuation_position:
             position: same_line
         declare_parentheses: true
@@ -74,7 +71,7 @@ parameters:
         combine_consecutive_unsets: true
         combine_nested_dirname: false
         comment_to_phpdoc: true
-        compact_nullable_typehint: false
+        compact_nullable_type_declaration: false
         concat_space:
             spacing: one
         constant_case:
@@ -114,7 +111,6 @@ parameters:
         fopen_flags: true
         fully_qualified_strict_types: true
         function_to_constant: true
-        function_typehint_space: true
         general_phpdoc_annotation_remove:
             annotations:
                 - inheritdoc
@@ -159,8 +155,8 @@ parameters:
                 - '@compiler_optimized'
             scope: namespaced
             strict: true
-        native_function_type_declaration_casing: true
-        new_with_braces: true
+        native_type_declaration_casing: true
+        new_with_parentheses: true
         no_alias_functions: true
         no_alternative_syntax: true
         no_binary_string: true
@@ -183,13 +179,11 @@ parameters:
                 - inside
                 - outside
         no_spaces_after_function_name: true
-        no_spaces_inside_parenthesis: true
         no_superfluous_elseif: true
         no_superfluous_phpdoc_tags:
             allow_mixed: true
             allow_unused_params: false
             remove_inheritdoc: true
-        no_trailing_comma_in_list_call: true
         no_trailing_comma_in_singleline:
             elements:
                 - arguments
@@ -198,6 +192,7 @@ parameters:
                 - group_import
         no_trailing_whitespace: true
         no_trailing_whitespace_in_comment: true
+        no_unneeded_braces: true
         no_unneeded_control_parentheses:
             statements:
                 - break
@@ -208,7 +203,6 @@ parameters:
                 - switch_case
                 - yield
         no_unneeded_curly_braces: true
-        no_unneeded_final_method: true
         no_unreachable_default_argument_value: true
         no_unset_cast: true
         no_unset_on_property: true
@@ -339,6 +333,7 @@ parameters:
         single_quote: true
         single_trait_insert_per_statement: true
         space_after_semicolon: true
+        spaces_inside_parentheses: true
         standardize_increment: true
         standardize_not_equals: true
         static_lambda: true
@@ -349,6 +344,7 @@ parameters:
         ternary_to_null_coalescing: false
         trailing_comma_in_multiline: true
         trim_array_spaces: true
+        type_declaration_spaces: true
         unary_operator_spaces: true
         void_return: false
         whitespace_after_comma_in_array: true
