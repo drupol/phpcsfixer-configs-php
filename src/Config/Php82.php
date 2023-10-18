@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace drupol\PhpCsFixerConfigsPhp\Config;
 
+use function dirname;
+
 final class Php82 extends YamlConfig
 {
     public function __construct()
