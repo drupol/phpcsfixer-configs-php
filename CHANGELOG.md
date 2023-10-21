@@ -5,10 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.19](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.18...2.0.19)
+## [2.0.20](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.19...2.0.20)
+
+### Merged
+
+- Fix reestablish wrong deleted line. Raise minimum requirements. [`#53`](https://github.com/drupol/phpcsfixer-configs-php/pull/53)
+- Fix deprecations when using PHPCS Fixer 3.35.1. [`#52`](https://github.com/drupol/phpcsfixer-configs-php/pull/52)
+- chore(deps): Bump actions/checkout from 3 to 4 [`#50`](https://github.com/drupol/phpcsfixer-configs-php/pull/50)
+- chore(deps): Bump shivammathur/setup-php from 2.22.0 to 2.25.5 [`#49`](https://github.com/drupol/phpcsfixer-configs-php/pull/49)
 
 ### Commits
 
+- autofix code styke [`f0d5c25`](https://github.com/drupol/phpcsfixer-configs-php/commit/f0d5c250f72dff1c3ae0bfbf0bf77a4e3b211413)
+
+## [2.0.19](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.18...2.0.19) - 2023-07-21
+
+### Commits
+
+- docs: update CHANGELOG [`1c83f97`](https://github.com/drupol/phpcsfixer-configs-php/commit/1c83f97123eaeaeac3188429f9b7edb0389ea7c1)
 - fix: memory issue [`6e1aca0`](https://github.com/drupol/phpcsfixer-configs-php/commit/6e1aca0a91b2bb388898c4e60c898cf88ff66ec0)
 
 ## [2.0.18](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.17...2.0.18) - 2023-07-21
