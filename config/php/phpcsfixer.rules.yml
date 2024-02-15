@@ -101,7 +101,6 @@ parameters:
         error_suppression:
             mute_deprecation_error: true
             noise_remaining_usages: true
-        escape_implicit_backslashes: true
         explicit_indirect_variable: false
         explicit_string_variable: true
         final_class: false
@@ -339,6 +338,7 @@ parameters:
         static_lambda: true
         strict_comparison: true
         strict_param: true
+        string_implicit_backslashes: true
         string_length_to_empty: true
         string_line_ending: true
         ternary_to_null_coalescing: false
