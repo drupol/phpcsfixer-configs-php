@@ -38,7 +38,7 @@ Where the `$configs` parameters must implements `PhpCsFixer/ConfigInterface`.
 
 ## Requirements
 
-* PHP >= 7.1.3
+* PHP >= 7.4
 
 ## Installation
 
@@ -50,7 +50,7 @@ See the [PHP CS Fixer documentation](https://github.com/FriendsOfPHP/PHP-CS-Fixe
 
 ## Code quality, tests and benchmarks
 
-Every time changes are introduced into the library, [Github](https://github.com/drupol/phpcsfixer-configs-php/actions) run the tests and the benchmarks.
+Every time changes are introduced into the library, [Github Actions](https://github.com/drupol/phpcsfixer-configs-php/actions) run the tests and the benchmarks.
 
 The library has tests written with [PHPSpec](http://www.phpspec.net/).
 Feel free to check them out in the `spec` directory. Run `composer phpspec` to trigger the tests.
@@ -69,8 +69,6 @@ Feel free to contribute to this library by sending Github pull requests. I'm qui
 [github stars]: https://img.shields.io/github/stars/drupol/phpcsfixer-configs-php.svg?style=flat-square
 [total downloads]: https://img.shields.io/packagist/dt/drupol/phpcsfixer-configs-php.svg?style=flat-square
 [github workflow status]: https://img.shields.io/github/workflow/status/drupol/phpcsfixer-configs-php/Continuous%20Integration?style=flat-square
-[code quality]: https://img.shields.io/scrutinizer/quality/g/drupol/phpcsfixer-configs-php/master.svg?style=flat-square
-[3]: https://scrutinizer-ci.com/g/drupol/phpcsfixer-configs-php/?branch=master
 [4]: https://shepherd.dev/github/drupol/phpcsfixer-configs-php
 [license]: https://img.shields.io/packagist/l/drupol/phpcsfixer-configs-php.svg?style=flat-square
 [donate github]: https://img.shields.io/badge/Sponsor-Github-brightgreen.svg?style=flat-square

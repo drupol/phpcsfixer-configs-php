@@ -9,10 +9,25 @@
             "email": "pol.dellaiera@protonmail.com"
         }
     ],
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/drupol"
+        }
+    ],
     "require": {
         "php": ">= 7.4",
         "friendsofphp/php-cs-fixer": "^3.49.0",
         "symfony/yaml": "^3 || ^4 || ^5 || ^6 || ^7"
+    },
+    "require-dev": {
+        "ext-pcov": "*",
+        "ergebnis/composer-normalize": "^2.31.0",
+        "friends-of-phpspec/phpspec-code-coverage": "^6",
+        "maglnet/composer-require-checker": "^4.4.0",
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpro/grumphp": "^1.0 || ^2.0",
+        "phpspec/phpspec": "^7"
     },
     "autoload": {
         "psr-4": {
@@ -25,27 +40,15 @@
         }
     },
     "config": {
-        "sort-packages": true,
         "allow-plugins": {
+            "ergebnis/composer-normalize": true,
             "phpro/grumphp": true
-        }
-    },
-    "require-dev": {
-        "ext-pcov": "*",
-        "friends-of-phpspec/phpspec-code-coverage": "^6",
-        "php-parallel-lint/php-parallel-lint": "^1.3",
-        "phpro/grumphp": "1.1.* || 1.3.* || 1.4.* || 1.13.*",
-        "phpspec/phpspec": "^7"
+        },
+        "sort-packages": true
     },
     "scripts": {
-        "grumphp": "./vendor/bin/grumphp run",
         "changelog-unreleased": "auto-changelog -c .auto-changelog -u",
-        "changelog-version": "auto-changelog -c .auto-changelog -v"
-    },
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/drupol"
-        }
-    ]
+        "changelog-version": "auto-changelog -c .auto-changelog -v",
+        "grumphp": "./vendor/bin/grumphp run"
+    }
 }

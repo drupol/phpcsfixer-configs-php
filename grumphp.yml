@@ -12,4 +12,6 @@ grumphp:
             using_cache: false
         phpspec:
           verbose: true
-
+        composer: ~
+        composer_normalize: ~
+        composer_require_checker: ~

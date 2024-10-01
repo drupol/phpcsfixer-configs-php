@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.21](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.20...2.0.21)
+
+### Merged
+
+- Issue [`#71`]: Update requirements for Drupal 11 compatibility. [`#72`](https://github.com/drupol/phpcsfixer-configs-php/pull/72)
+- chore(deps): Bump shivammathur/setup-php from 2.29.0 to 2.30.5 [`#68`](https://github.com/drupol/phpcsfixer-configs-php/pull/68)
+- Issue [`#61`]: Use string_implicit_backslashes instead of deprecated escape_implicit_backslashes. [`#62`](https://github.com/drupol/phpcsfixer-configs-php/pull/62)
+
+### Commits
+
+- Issue [`#71`]: Update requirements for Drupal 11 compatibility. [`def9fdd`](https://github.com/drupol/phpcsfixer-configs-php/commit/be3ce5919c2e40325c076c1de0d0a6319d018279)
+- Update CI PHP version to fix Scrutinizer. [`e058439`](https://github.com/drupol/phpcsfixer-configs-php/commit/e0584396b522377a2f08451884e390dd709afc04)
+- Issue [`#61`]: Use string_implicit_backslashes instead of deprecated escape_implicit_backslashes. [`be3ce59`](https://github.com/drupol/phpcsfixer-configs-php/commit/be3ce5919c2e40325c076c1de0d0a6319d018279)
+
 ## [2.0.20](https://github.com/drupol/phpcsfixer-configs-php/compare/2.0.19...2.0.20)
 
 ### Merged
