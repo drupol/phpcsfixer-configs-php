@@ -9,12 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Merged
 
+- docs: update changelog [`#74`](https://github.com/drupol/phpcsfixer-configs-php/pull/74)
 - Issue [`#71`]: Update requirements for Drupal 11 compatibility. [`#72`](https://github.com/drupol/phpcsfixer-configs-php/pull/72)
 - chore(deps): Bump shivammathur/setup-php from 2.29.0 to 2.30.5 [`#68`](https://github.com/drupol/phpcsfixer-configs-php/pull/68)
 - Issue [`#61`]: Use string_implicit_backslashes instead of deprecated escape_implicit_backslashes. [`#62`](https://github.com/drupol/phpcsfixer-configs-php/pull/62)
 
 ### Commits
 
+- fix: composer normalize. [`6910adb`](https://github.com/drupol/phpcsfixer-configs-php/commit/6910adb308aad3c3412c15418b8f72b2de860aca)
+- fix: Remove Scrutinizer. Add Composer checks. Update docs. [`e8e1190`](https://github.com/drupol/phpcsfixer-configs-php/commit/e8e11903e7e75432679bf119ed74c25384af460d)
+- docs: update changelog [`9394023`](https://github.com/drupol/phpcsfixer-configs-php/commit/9394023282ea0db1bbcb46bbfcb6900d2d921065)
 - Issue [`#71`]: Update requirements for Drupal 11 compatibility. [`def9fdd`](https://github.com/drupol/phpcsfixer-configs-php/commit/be3ce5919c2e40325c076c1de0d0a6319d018279)
 - Update CI PHP version to fix Scrutinizer. [`e058439`](https://github.com/drupol/phpcsfixer-configs-php/commit/e0584396b522377a2f08451884e390dd709afc04)
 - Issue [`#61`]: Use string_implicit_backslashes instead of deprecated escape_implicit_backslashes. [`be3ce59`](https://github.com/drupol/phpcsfixer-configs-php/commit/be3ce5919c2e40325c076c1de0d0a6319d018279)
